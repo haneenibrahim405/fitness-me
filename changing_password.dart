@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_projects_1/widgets/password_related_widgets/password_text_field.dart';
+import 'package:flutter_projects_1/widgets/password_related_widgets/text_field.dart';
 import 'package:flutter_projects_1/widgets/password_related_widgets/update_password_button.dart';
 import 'package:flutter_projects_1/widgets/password_related_widgets/visibility_controller.dart';
 import 'package:provider/provider.dart';
