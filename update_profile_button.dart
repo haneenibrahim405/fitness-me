@@ -1,26 +1,28 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_projects_1/color_extension.dart';
 
-class UpdateButton extends StatelessWidget {
+class UpdateProfileButton extends StatelessWidget {
   final VoidCallback onPressed;
 
-  const UpdateButton({super.key, required this.onPressed});
+  const UpdateProfileButton({super.key, required this.onPressed});
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onPressed,
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 1),
         decoration: BoxDecoration(
+          border: Border.all(color: MyColors.PrimaryBlue, width: 1),
           borderRadius: BorderRadius.circular(8),
-          color: const Color(0xff626ae7), // Same as Edit button
+          color: Colors.white,
         ),
-        child: const Text(
+        child: Text(
           "Update",
           style: TextStyle(
-            color: Colors.white,
-            fontSize: 12,
-            fontWeight: FontWeight.bold,
+            color: MyColors.PrimaryBlue,
+            fontSize: 10,
+            fontWeight: FontWeight.w500,
           ),
         ),
       ),

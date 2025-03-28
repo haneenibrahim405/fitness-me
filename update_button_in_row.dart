@@ -22,6 +22,7 @@ class ProfileInfoRowWithUpdate extends StatelessWidget {
       child: Row(
         children: [
           Expanded(
+            flex: 3,
             child: TextField(
               controller: controller,
               decoration: InputDecoration(
@@ -34,8 +35,11 @@ class ProfileInfoRowWithUpdate extends StatelessWidget {
               ),
             ),
           ),
-          const SizedBox(width: 10),
-          UpdateButton(onPressed: onUpdatePressed),
+          const SizedBox(width: 8),
+          SizedBox(
+            width: 100,
+            child: UpdateProfileButton(onPressed: onUpdatePressed),
+          ),
         ],
       ),
     );

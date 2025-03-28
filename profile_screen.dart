@@ -19,7 +19,7 @@ class ProfileScreen extends StatelessWidget {
       child: Scaffold(
         backgroundColor: MyColors.white,
         appBar: AppBar(
-          title: const Text(""),
+          title: const Text("Profile"),
           backgroundColor: Colors.white,
           elevation: 0,
           leading: IconButton(
@@ -43,6 +43,7 @@ class ProfileScreen extends StatelessWidget {
                       onPrivacySelected: () => controller.togglePrivacy(true),
                     ),
                     const SizedBox(height: 20),
+
                     controller.isPrivate
                         ? buildPasswordChangeScreenUI(
                       context,
@@ -61,12 +62,9 @@ class ProfileScreen extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => EditProfileScreen(),
+                                builder: (context) => const EditProfileScreen(),
                               ),
-                            );
-                          },
-                          onSavePressed: () {
-                            controller.saveProfile();
+                            ).then((_) => controller.reloadProfile()); // Reload after edit
                           },
                         ),
                         const SizedBox(height: 20),

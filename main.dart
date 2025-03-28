@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_projects_1/profile_screen.dart';
 import 'package:provider/provider.dart';
-import 'health_screen.dart';
 import 'package:flutter_projects_1/widgets/profile_related_widgets/profile_controller.dart';
 import 'package:flutter_projects_1/widgets/health_related_widgets/nutrient_provider.dart';
 
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
-        home: const HealthScreen(),
+        home: const ProfileScreen(),
       ),
     );
   }

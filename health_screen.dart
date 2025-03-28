@@ -72,7 +72,7 @@ class HealthScreen extends StatelessWidget {
               fatGrams: nutrientProvider.fat,
               proteinGrams: nutrientProvider.protein,
               carbsGrams: nutrientProvider.carbs,
-                dailyCalorieGoal: dailyCalorieGoal.toDouble(),
+              dailyCalorieGoal: dailyCalorieGoal.toDouble(),
             ),
 
             const Spacer(),
